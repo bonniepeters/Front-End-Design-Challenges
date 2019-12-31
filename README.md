@@ -16,6 +16,6 @@ This repo was created to track my progress over time in mastering front-end deve
 ### FreeCodeCamp's Responsive Web Design Certification
 - [x] [Tribute Page](https://codepen.io/Bpeters23/pen/GRgvopB)
 - [x] [Survey Form](https://codepen.io/Bpeters23/pen/BaydKqp)
-- [ ] Product Landing Page
+- [x] [Product Landing Page](https://codepen.io/Bpeters23/pen/vYEegxG)
 - [ ] Technical Documentation Page
 - [ ] Personal Portfolio Webpage
