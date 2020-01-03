@@ -18,4 +18,4 @@ This repo was created to track my progress over time in mastering front-end deve
 - [x] [Survey Form](https://codepen.io/Bpeters23/pen/BaydKqp)
 - [x] [Product Landing Page](https://codepen.io/Bpeters23/pen/vYEegxG)
 - [x] [Technical Documentation Page](https://codepen.io/Bpeters23/pen/VwYrPrY)
-- [x] [Personal Portfolio Webpage](Portfolio Page)
+- [x] [Personal Portfolio Webpage](https://codepen.io/Bpeters23/pen/VwYryoQ)
