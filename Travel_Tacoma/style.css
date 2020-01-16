@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+}
+header {
+    background-image: url('https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_679,q_75,w_1210/v1/clients/tacoma/NPS_Paradise_in_Winter_0860e360-487e-4fd7-9f6b-97ceee4b0670.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'BenchNine', sans-serif;
+}
