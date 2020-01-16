@@ -1,9 +1,77 @@
 body {
     margin: 0;
+    background-color: rgb(193, 187, 179);
+    padding: 0 3%;
 }
 header {
-    background-image: url('https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_679,q_75,w_1210/v1/clients/tacoma/NPS_Paradise_in_Winter_0860e360-487e-4fd7-9f6b-97ceee4b0670.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+}
+.logo {
+    width: 45%;
+    padding: 6% 18%;
+}
+div > nav > ul {
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+.secondary-nav{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    background: rgb(255, 255, 255);
+    width: 75%;
+}
+.secondary-nav:before {
+    background: rgb(255, 255, 255);
+    padding-left: 20px;
+}
+.secondary-nav, .main-nav {
+    position: relative;
+    text-transform: uppercase;
+    padding: 1% 0;
+}
+.secondary-nav:before, .main-nav:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform-origin: bottom left;
+    -ms-transform: skew(20deg, 0deg);
+    -webkit-transform: skew(20deg, 0deg);
+    transform: skew(20deg, 0deg);
+}
+.main-nav{
+    font-size: 18px;
     font-family: 'BenchNine', sans-serif;
+    background: rgb(0, 149, 187);
+    width: 100%;
+    font-weight: 100;
+}
+.main-nav:before {
+    background: rgb(0, 149, 187);
+}
+.secondary-nav a {
+    color: rgb(54, 54, 54);
+    padding: 8px;
+}
+.secondary-nav-list {
+    padding-left: 10px;
+}
+.secondary-nav-container {
+    padding-left: 80px;
+    margin-bottom: 2px;
+}
+.main-nav a {
+    color: rgb(255, 255, 255);
+    padding: 8px 32px;
 }
