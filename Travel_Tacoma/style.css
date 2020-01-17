@@ -1,23 +1,21 @@
 body {
     margin: 0;
-    background-color: rgb(193, 187, 179);
-    padding: 0 3%;
 }
 header {
     height: 800px;
     display: grid;
-    grid-template-columns: 4fr 6fr;
-    background: linear-gradient(rgb(89,92,104), 10%, rgb(184,183,201));
+    grid-template-columns: 2fr 3fr;
 }
 .logo {
-    width: 45%;
-    padding: 6% 18%;
+    width: 43%;
+    padding: 5% 15%;
+    z-index: 10;
 }
 div > nav > ul {
     list-style: none;
-    padding-left: 0px;
     display: flex;
     margin: 0;
+    padding-left: 4%;
 }
 a{
     text-decoration: none;
@@ -44,7 +42,7 @@ a{
     padding-left: 10px;
 }
 .secondary-nav-container {
-    padding-left: 80px;
+    padding-left: 16%;
     margin-bottom: 2px;
 }
 
@@ -85,3 +83,31 @@ a{
     color: rgb(255, 255, 255);
     padding: 8px 32px;
 }
+
+/***************** Slides ******************/
+.slides {
+    position: absolute;
+}
+.slide-img {
+    max-width: 100%; 
+    margin: auto;
+  }
+
+/* rgba(86, 89, 101, 0) */
+.slide-img::after {
+  display: block;
+  position: relative;
+  background-image: linear-gradient(rgb(0, 0, 0), 20%, rgba(255, 255, 255, 0));
+  margin-top: -800px;
+  height: 800px;
+  width: 100%;
+  content: '';
+}
+
+
+
+@media only screen and (max-width: 1210px) {
+    body {
+        background-color: rgb(193, 187, 179);
+    }
+  }
