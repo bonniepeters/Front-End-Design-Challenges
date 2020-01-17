@@ -29,28 +29,35 @@ a{
     background: rgb(255, 255, 255);
     width: 75%;
     z-index: 1;
+    align-self: center;
 }
 .secondary-nav:before {
     background: rgb(255, 255, 255);
     padding-left: 20px;
 }
-.secondary-nav a {
+a.secondary-nav {
     color: rgb(54, 54, 54);
-    padding: 8px;
 }
 .secondary-nav-list {
     padding-left: 10px;
+    display: flex;
 }
 .secondary-nav-container {
     padding-left: 16%;
     margin-bottom: 2px;
+}
+#trip-icon {
+    background: rgb(176, 79, 21);
+    color: rgb(255, 255, 255);
+}
+#trip-icon:before{
+    background: rgb(176, 79, 21);
 }
 
 /**************** Both Navs *****************/
 .secondary-nav, .main-nav {
     position: relative;
     text-transform: uppercase;
-    padding: 1% 0;
 }
 .secondary-nav:before, .main-nav:before {
     content: " ";
@@ -75,6 +82,7 @@ a{
     width: 100%;
     font-weight: 100;
     z-index: 1;
+    padding: 1% 0;
 }
 .main-nav:before {
     background: rgb(0, 149, 187);
@@ -93,11 +101,10 @@ a{
     margin: auto;
   }
 
-/* rgba(86, 89, 101, 0) */
 .slide-img::after {
   display: block;
   position: relative;
-  background-image: linear-gradient(rgb(0, 0, 0), 20%, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(rgb(0, 0, 0), 20%, transparent);
   margin-top: -800px;
   height: 800px;
   width: 100%;
