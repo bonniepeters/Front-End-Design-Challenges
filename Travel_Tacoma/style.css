@@ -1,122 +1,137 @@
 body {
-    margin: 0;
-    width: 100%;
-    max-width: 1210px;
+  margin: 0;
+  width: 100%;
+  max-width: 1210px;
 }
 header {
-    height: 800px;
-    display: grid;
-    grid-template-columns: 3fr 4fr;
-}
-.logo {
-    width: 43%;
-    padding: 5% 15%;
-    z-index: 10;
+  height: 800px;
+  display: grid;
+  grid-template-columns: 3fr 4fr;
 }
 div > nav > ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding-left: 4%;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding-left: 4%;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 /******************** Navs ********************/
 /************ Secondary Nav Only *************/
+.logo {
+  width: 38%;
+  padding: 5% 17%;
+  z-index: 10;
+}
 .secondary-nav {
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    background: rgb(255, 255, 255);
-    z-index: 1;
-    align-self: center;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  background: rgb(255, 255, 255);
+  z-index: 2;
+  align-self: center;
 }
 .secondary-nav:before {
-    background: rgb(255, 255, 255);
-    padding-left: 20px;
+  background: rgb(255, 255, 255);
+  padding-left: 20px;
 }
 .secondary-nav-list {
-    padding-left: 10px;
-    display: flex;
+  padding-left: 10px;
+  display: flex;
 }
 .secondary-nav-container {
-    padding-left: 10%;
-    margin-bottom: 2px;
+  padding-left: 10%;
+  margin-bottom: 2px;
 }
 a.secondary-nav {
-    color: rgb(54, 54, 54);
+  color: rgb(54, 54, 54);
 }
 a.secondary-nav {
-    padding: 15.5px 10px;
+  padding: 15.5px 10px;
 }
 span {
-    padding: 0 6px;
+  padding: 0 6px;
 }
 #search {
-    padding: 10px;
+  padding: 10px;
+  width: 15px
 }
-#weather{
-    padding: 7px;
-    color: rgb(0, 149, 187);
-    font-family: 'Roboto Slab', serif;
-    font-size: 25px;
+#weather {
+  padding: 7px;
+  color: rgb(0, 149, 187);
+  font-family: "Roboto Slab", serif;
+  font-size: 25px;
 }
 #trip-icon {
-    background: rgb(176, 79, 21);
-    color: rgb(255, 255, 255);
-    padding: 0 16px;
+  background: rgb(176, 79, 21);
+  color: rgb(255, 255, 255);
+  padding: 2px 13px 1px 9px;
 }
-#trip-icon:before{
-    background: rgb(176, 79, 21);
+#trip-icon-list-item {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+#trip-icon:before {
+  background: rgb(176, 79, 21);
 }
 
 /**************** Both Navs *****************/
-.secondary-nav, .main-nav {
-    position: relative;
-    text-transform: uppercase;
+.secondary-nav,
+.main-nav {
+  position: relative;
+  text-transform: uppercase;
 }
-.secondary-nav:before, .main-nav:before {
-    content: " ";
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transform-origin: bottom left;
-    -ms-transform: skew(20deg, 0deg);
-    -webkit-transform: skew(20deg, 0deg);
-    transform: skew(20deg, 0deg);
+.secondary-nav:before,
+.main-nav:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform-origin: bottom left;
+  -ms-transform: skew(20deg, 0deg);
+  -webkit-transform: skew(20deg, 0deg);
+  transform: skew(20deg, 0deg);
+}
+.secondary-nav:after,
+.main-nav:after {
+  content: " ";
+  display: block;
+  width: 50px;
+  z-index: 1;
 }
 
 /************** Main Nav Only ***************/
-.main-nav{
-    font-size: 18px;
-    font-family: 'BenchNine', sans-serif;
-    background: rgb(0, 149, 187);
-    width: 100%;
-    font-weight: 100;
-    z-index: 1;
-    padding: 1% 0;
+.main-nav {
+  font-size: 18px;
+  font-family: "BenchNine", sans-serif;
+  background: rgb(0, 149, 187);
+  width: 100%;
+  font-weight: 100;
+  z-index: 1;
+  padding: 1% 0;
 }
 .main-nav:before {
-    background: rgb(0, 149, 187);
+  background: rgb(0, 149, 187);
 }
 .main-nav a {
-    color: rgb(255, 255, 255);
-    padding: 8px 32px;
+  color: rgb(255, 255, 255);
+  padding: 8px 32px;
 }
 
 /***************** Slides ******************/
 .slides {
-    position: absolute;
+  position: absolute;
 }
 .slide-img {
-    max-width: 100%; 
-    margin: auto;
-  }
+  max-width: 100%;
+  margin: auto;
+}
 
 .slide-img::after {
   display: block;
@@ -125,13 +140,11 @@ span {
   margin-top: -800px;
   height: 800px;
   width: 100%;
-  content: '';
+  content: "";
 }
 
-
-
 @media only screen and (max-width: 1210px) {
-    body {
-        background-color: rgb(193, 187, 179);
-    }
+  body {
+    background-color: rgb(193, 187, 179);
   }
+}
