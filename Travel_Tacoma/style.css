@@ -15,6 +15,12 @@ div > nav > ul {
   margin: 0;
   padding-left: 4%;
 }
+section > div > ul {
+  display: flex;
+}
+li {
+  list-style: none;
+}
 a {
   text-decoration: none;
 }
@@ -23,6 +29,7 @@ h2 {
 }
 main {
     background-color: rgb(255, 255, 255);
+    margin: -110px 0;
 }
 
 /******************** Navs ********************/
@@ -132,6 +139,7 @@ span {
 }
 
 /***************** Slides ******************/
+/******************** Main ********************/
 .slides {
   position: absolute;
 }
@@ -151,20 +159,22 @@ span {
 .overlay {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.6);
-    margin-top: -157px;
-    height: 152px;
+    margin-top: -168px;
+    height: 165px;
     width: 100%;
     color: rgb(255, 255, 255);
     font-family: "BenchNine", sans-serif;
 }
-.overlay h2, .overlay p {
+.overlay h2 {
     margin: 0;
     padding: 15px 0 0 50px;
     width: 70%;
-    margin: 0;
 }
 .overlay p {
     font-family: "Roboto", sans-serif;
+    width: 70%;
+    padding: 0 0 0 50px;
+    margin: 10px 0;
 }
 .overlay a {
     color: rgb(0, 149, 187);
@@ -186,4 +196,31 @@ span {
 }
 .left-slide-arrow {
     padding-right: 84%;
+}
+
+/***************** Previews *****************/
+.previews {
+  z-index: 40;
+  position: absolute;
+  margin: -45px 0;
+  width: 100%;
+  padding-left: 200px;
+}
+.preview {
+  max-width: 144px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+  font-size: 11px;
+  margin: 8px;
+}
+.preview-img {
+  border: 2px solid rgb(70, 70, 70)
+}
+#selected {
+  border: 2px solid rgb(210, 204, 194)
+}
+h3 {
+  margin: 2px;
+  color: rgb(70, 70, 70)
 }
